@@ -1,0 +1,46 @@
+@font-face {
+    font-family: AgencyFB;
+    src: url('font/AGENCYB.TTF');
+}
+body{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    background-image: url("img/fond_barbe_header.jpg");
+}
+#section1 {
+    width: 100%;
+}
+
+img.logo_menu {
+    width:60px;
+    height:77px;
+    float: left;
+    padding-left: 200px;
+}
+
+div.contact_menu{
+    color: #ffffff;
+    text-align: left;
+    margin-left: 260px;
+    padding-top: 5px;
+}
+
+div.scrollmenu {
+    background-color: #555555;
+    display: block;
+    text-align: right;
+    padding-right: 218px;
+    /*height: 77px; */
+}
+
+
+div.scrollmenu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    padding-right: 62px;
+    font-family: AgencyFB;
+    font-weight: 10px;
+    }

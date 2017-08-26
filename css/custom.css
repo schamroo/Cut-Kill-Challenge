@@ -8,19 +8,21 @@
 }
 
 body{
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 /* ===============================  SECTION 1 ======================================  */
 .section1 {
-    background: url("../img/fond_barbe_header.jpg");
+    width: 100%;
     padding-bottom: 218px;
+    background: url("../img/fond_barbe_header.jpg") no-repeat;
+    background-size: cover;
 }
 
-ul {
+.section1 ul {
     list-style-type: none;
 
 }
@@ -28,7 +30,7 @@ ul {
     background-color: #555555;
     padding-right: 218px;
 }
-li {
+.section1 ul li {
     display: inline-block;
 }
 .menu>li>a{
@@ -62,28 +64,74 @@ table#logo_desc>tbody>tr:nth-child(3){
 
 /* ===============================  SECTION 2 ======================================  */
 .section2 {
-    background-color: deeppink;
-    padding-top: 1PX;
-    padding-bottom: 1px;
+    width: 100%;
+    padding-top: 76PX;
+    padding-bottom: 76px;
+    background: url("../img/pattern_by_miseryloneliness.png");
+}
+.section2 p {
+    font-family: ArimoRegular;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.haircut {
+    height: 342px;
+    width: 224px;
+}
+
+.barber{
+    height: 342px;
+    width: 224px;
+}
+.beardcare {
+    height: 342px;
+    width: 224px;
+}
+
+div.section2 {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-evenly;
 }
 
 /* ===============================  SECTION 3 ======================================  */
 .section3 {
-    background-color: cornflowerblue;
-    padding-top: 1PX;
-    padding-bottom: 1px;
+    width: 100%;
+    /*height: 1080px;*/
+    background: url("../img/fond_enfant_tarifs.jpg") no-repeat;
+    background-size: contain;
 }
-
+.cutkill_logo2{
+    padding-top: 45px;
+}
+.cutkill_logo2 p{
+    font-family: AgencyFB;
+    font-size: 60px;
+    color: #242C29;
+}
 /* ===============================  SECTION 4 ======================================  */
 .section4 {
-    background-color: navajowhite;
+    background: url("../img/27739629_p.jpg");
+    width: 100%;
+    height: 1299px;
     padding-top: 1PX;
     padding-bottom: 1px;
+    color: white;
+}
+.opacity {
+    opacity: 0.5;
+    border: 5px solid #999999;
+    height: 820px;
+    width: 1510px;
+    margin-left: 100px;
 }
 
 /* ===============================  footer ======================================  */
 footer {
-    background-color: greenyellow;
-    padding-top: 1PX;
-    padding-bottom: 1px;
+    text-align: center;
 }

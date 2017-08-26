@@ -3,13 +3,13 @@
     src: url('font/AGENCYB.TTF');
 }
 body{
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    background-image: url("img/fond_barbe_header.jpg");
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
 }
-#section1 {
+body .section1 {
+    background: url("../img/fond_barbe_header.jpg") no-repeat center;
     width: 100%;
 }
 
@@ -29,10 +29,8 @@ div.contact_menu{
 
 div.scrollmenu {
     background-color: #555555;
-    display: block;
     text-align: right;
     padding-right: 218px;
-    /*height: 77px; */
 }
 
 

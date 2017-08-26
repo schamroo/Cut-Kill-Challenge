@@ -1,0 +1,89 @@
+@font-face {
+    font-family: AgencyFB;
+    src: url('font/AGENCYB.TTF');
+}
+@font-face {
+    font-family: ArimoRegular;
+    src:url('font/Arimo-Regular.ttf') ;
+}
+
+body{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+/* ===============================  SECTION 1 ======================================  */
+.section1 {
+    background: url("../img/fond_barbe_header.jpg");
+    padding-bottom: 218px;
+}
+
+ul {
+    list-style-type: none;
+
+}
+.menu {
+    background-color: #555555;
+    padding-right: 218px;
+}
+li {
+    display: inline-block;
+}
+.menu>li>a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    padding-right: 62px;
+    font-family: AgencyFB;
+    font-size: 10px;
+}
+
+table {
+    border: 3px solid #ffffff;
+    border-right: none;
+    border-left:none;
+}
+
+table.logo_desc {
+    font-family: ArimoRegular;
+    color: #ffffff;
+}
+table#logo_desc>tbody>tr:nth-child(1){
+    font-size: 28px;
+}
+table#logo_desc>tbody>tr:nth-child(2){
+    font-size: 40px;
+}
+table#logo_desc>tbody>tr:nth-child(3){
+    font-size: 76px;
+}
+
+/* ===============================  SECTION 2 ======================================  */
+.section2 {
+    background-color: deeppink;
+    padding-top: 1PX;
+    padding-bottom: 1px;
+}
+
+/* ===============================  SECTION 3 ======================================  */
+.section3 {
+    background-color: cornflowerblue;
+    padding-top: 1PX;
+    padding-bottom: 1px;
+}
+
+/* ===============================  SECTION 4 ======================================  */
+.section4 {
+    background-color: navajowhite;
+    padding-top: 1PX;
+    padding-bottom: 1px;
+}
+
+/* ===============================  footer ======================================  */
+footer {
+    background-color: greenyellow;
+    padding-top: 1PX;
+    padding-bottom: 1px;
+}

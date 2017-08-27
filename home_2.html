@@ -4,27 +4,133 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/custom.css">
+
+    <style>
+        .navTab {
+            background-color: grey;
+            height: 90px;
+            width: 1920px;
+            font-size: 0;
+        }
+
+        .navTab-logo {
+            height: 90px;
+            width: auto;
+            display: inline-block;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        .helper {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .navTab img {
+            vertical-align: middle;
+            max-height: 81px;
+            max-width: 78px;
+            padding-left: 220px;
+            padding-right: 60px;
+        }
+
+        .navTab-contact {
+            height: 37px;
+            width: 226px;
+            display: inline-block;
+            margin: 0px;
+        }
+
+        .contact-detail {
+            text-align: left;
+            color: white;
+            font-family: ArimoRegular;
+            font-size: 18px;
+        }
+
+        .navMenu {
+            height: 90px;
+            width: auto;
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            right: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        li {
+            float: left;
+            padding-right: 62px;
+            font-family: Agency FB;
+            font-size: 30px;
+        }
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111;
+        }
+
+    </style>
+
 </head>
 <body>
 
-<div class="section1">
-    <header></header>
-    <nav>
+<div class="section1" id="section1">
+
+
+    <div class="navTab">
+        <nav>
+            <div class="navTab-logo">
+                <span class="helper"></span>
+                <img src="css/img/TheCutKillHair_logo_2.png" />
+            </div>
+            <div class="navTab-contact">
+                <span class="helper contact-detail">Tel : 01.23.45.67.89 <br /> Email : contact@cutkillhair.fr</span>
+            </div>
+
+            <div class="navMenu">
+                <span class="helper"></span>
+                <ul>
+                    <li><a href="#">ACCUEIL</a></li>
+                    <li><a href="#">NOS SERVICES</a></li>
+                    <li><a href="#">NOS TARIFS</a></li>
+                    <li style="padding-right:218px;"><a href="#">PRENDRE RDV</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--
+    <div class="header">
+
         <img src="css/img/TheCutKillHair_logo.png" class="logo_menu" height="81px" width="78px">
 
         <div class="contact_menu">
             <p>
-                Tel : 01.23.45.67.89 <br/>Email : contact@cutkillhair.fr
+               Tel : 01.23.45.67.89 <br/>Email : contact@cutkillhair.fr
             </p>
         </div>
         <ul id="menu" class="menu">
-            <li><a href="#">ACCUEIL</a></li>
-            <li><a href="#">NOS SERVICES</a></li>
-            <li><a href="#">NOS TARIFS</a></li>
-            <li><a href="#">PRENDRE RDV</a></li>
+            <li><a href="#section1">ACCUEIL</a></li>
+            <li><a href="#section2">NOS SERVICES</a></li>
+            <li><a href="#section3">NOS TARIFS</a></li>
+            <li><a href="#section4">PRENDRE RDV</a></li>
 
         </ul>
-    </nav>
+    </div> -->
     <div id="logo" class="logo">
         <img src="css/img/TheCutKillHair_logo.png" alt="logo" height="385px" width="341px">
         <table class="logo_desc" id="logo_desc">
@@ -44,7 +150,7 @@
 
 </div>
 
-<div class="section2"> <!-- .flex-container -->
+<div class="section2" id="section2"> <!-- .flex-container -->
 
     <div class="haircut">
         <img src="css/img/haircut_b.png" width="224px" height="203px"
@@ -79,76 +185,114 @@
 
 </div>
 
-<div class="section3">
+<div class="section3" id="section3">
     <div class="cutkill_logo2">
         <img src="css/img/TheCutKillHair_logo_2.png" height="292px" width="286px" />
         <p>NOS TARIFS</p>
     </div>
-    <div class="coiffure">
-        <h4>COIFFURE</h4>
-        <ul>
-            <li>Shampoing-coupe-coiffage................... 32€<br></li>
-            <li>Service coupe "VIP" serviette chaude....... 37€<br></li>
-            <li>Coupe tondeuse............................. 25€<br></li>
-            <li>Shampoing-coiffage......................... 17€</li>
-            <li>Rasage du crâne............................ 32€</li>
-            <li>Coloration "Blend American Crew"........... 27€</li>
-        </ul>
+    <div class="tableau" id="tableau">
+        <div class="coiffure">
+            <h4 id="coif">COIFFURE</h4>
+            <ul class="coif_li">
+                <li>Shampoing-coupe-coiffage................... 32€<br></li>
+                <li>Service coupe "VIP" serviette chaude....... 37€<br></li>
+                <li>Coupe tondeuse............................. 25€<br></li>
+                <li>Shampoing-coiffage......................... 17€</li>
+                <li>Rasage du crâne............................ 32€</li>
+                <li>Coloration "Blend American Crew"........... 27€</li>
+            </ul>
+        </div>
+        <div class="rasage">
+            <h4 id="raz">RASAGE</h4>
+            <ul class="raz_li">
+                <li>Rasage à l'ancienne.............................. 32€</li>
+                <li>Service rasage "VIP" à la vapeur................. 37€</li>
+                <li>Taille de moustache / bouc....................... 8€</li>
+                <li>Taille barbe scupltée tondeuse.................. 25€</li>
+                <li>Taille barbe scupltée au rasoir................. 32€</li>
+                <li>Taille barbe sculptée avec cire................. 37€</li>
+            </ul>
+        </div>
+        <div class="epilation">
+            <h4 id="epil">EPILATION</h4>
+            <ul class="epil_li">
+                <li>Sourcils............................................................................................................................ 6€</li>
+                <li>Nez & Oreilles...................................................................................................................... 6€</li>
+                <li>Bas de nuque....................................................................................................................... 15€</li>
+            </ul>
+        </div>
     </div>
-    <div class="rasage">
-        <h4>RASAGE</h4>
-        <ul>
-            <li>Rasage à l'ancienne.............................. 32€</li>
-            <li>Service rasage "VIP" à la vapeur................. 37€</li>
-            <li>Taille de moustache / bouc....................... 8€</li>
-            <li>Taille barbe scupltée tondeuse.................. 25€</li>
-            <li>Taille barbe scupltée au rasoir................. 32€</li>
-            <li>Taille barbe sculptée avec cire................. 37€</li>
-        </ul>
+    <div class="tarif">
+        <p>TARIF SPÉCIAL Étudiant et -20ans................................................................................. -15%
+    </p>
     </div>
-    <div class="epilation">
-        <h4>EPILATION</h4>
-        <ul>
-            <li>Sourcils............................................................................................................................ 6€</li>
-            <li>Nez & Oreilles...................................................................................................................... 6€</li>
-            <li>Bas de nuque....................................................................................................................... 15€</li>
-        </ul>
-    </div>
-    <div><p id="tarif">TARIF SPÉCIAL Étudiant et -20ans................................................................................. -15%</p></div>
 </div>
 
-<div class="section4">
-    <p>PRENDRE RENDEZ-VOUS
+<div class="section4" id="section4">
+    <div class="titre">
+        <p id="rdv">PRENDRE RENDEZ-VOUS</p>
+        <p id="rdv_desc">
+            <span>«</span>
+            Chaque coupe de cheveux réalisée, chaque barbe taillée resteront des instants hors du temps.
+            <span>»</span>
+        </p>
 
-        « Chaque coupe de cheveux réalisée, chaque barbe taillée resteront des instants hors du temps. »</p>
+
+    </div>
+
     <div class="opacity">
-        <img src="css/img/timbre-02.png" width="295px" height="200px"/>
-        <img src="css/img/Calque 3.png" width="411px" height="193px"/>
-        <ul>
-            <li>THE CUTKILL HAIR</li>
-            <li>32 Rue du Faubourg Saint-Honoré</li>
-            <li>75008 PARIS</li>
-            <li>Tel : 01.23.45.67.89</li>
-            <li>Email : contact@cutkillhair.fr</li>
-        </ul>
-        <ul>
-            <li>NOS HORAIRES D’OUVERTURER</li>
-            <li>lundi..................................................................................................... fermé</li>
-            <li>mardi.................................................................................................... 09h à 19h</li>
-            <li>mercredi............................................................................................... 09h à 19h</li>
-            <li>jeudi...................................................................................................... 09h à 20h</li>
-            <li>vendredi................................................................................................ 09h à 19h</li>
-            <li>samedi.................................................................................................. 09h à 19h</li>
-        </ul>
+        <div class="contact_form" id="item-1">
+            <form action="contact.php" method="POST">
+                <input type="text" name="name" placeholder="VOTRE NOM..."><br />
+                <input type="tel" name="tel" placeholder="VOTRE NO TELEPHONE..."><br />
+                <input type="email" name="email" placeholder="VOTRE ADRESSE MAIL..."><br />
+                <textarea name="message" rows="6" cols="25" placeholder="VOTRE MESSAGE..."></textarea><br />
+                <input type="submit" value="Envoyer" id="item-7">
+
+            </form>
+        </div>
+        <div id="item-2">
+            <img src="css/img/timbre-02.png" width="295px" height="200px"/>
+        </div>
+        <div id="item-3">
+            <h4>THE CUTKILL HAIR</h4>
+            <ul>
+                <li>32 Rue du Faubourg Saint-Honoré</li>
+                <li>75008 PARIS</li>
+                <li>Tel : 01.23.45.67.89</li>
+                <li>Email : contact@cutkillhair.fr</li>
+            </ul>
+        </div>
+        <div id="item-4">
+            <img src="css/img/Calque 3.png" width="411px" height="193px"/>
+        </div>
+        <div id="item-5">
+            <h4>NOS HORAIRES D’OUVERTURE</h4>
+            <ul>
+                <li>lundi..................................................................................................... fermé</li>
+                <li>mardi.................................................................................................... 09h à 19h</li>
+                <li>mercredi............................................................................................... 09h à 19h</li>
+                <li>jeudi...................................................................................................... 09h à 20h</li>
+                <li>vendredi................................................................................................ 09h à 19h</li>
+                <li>samedi.................................................................................................. 09h à 19h</li>
+            </ul>
+        </div>
+
+        <div id="item-6">
+            <p>Nos services sont exclusivement réservés à la gent masculine.
+            La prise de rendez-vous est obligatoire.</p>
+        </div>
+
+
     </div>
 </div>
 
 <footer>
-    <p>Contact / Mentions</p>
-    <p>2016 &copy; Studio A by Aerow</p>
-    <img src="css/img/facebook.png" height="60px" width="60px">
-    <img src="css/img/twitter.png" height="60px" width="60px">
-    <img src="css/img/instagram.png" height="60px" width="60px">
+    <p>Contact / Mentions<br/>2016 &copy; Studio A by Aerow</p>
+    <div class="sc"><img src="css/img/facebook.png" height="60px" width="60px">
+        <img src="css/img/twitter.png" height="60px" width="60px">
+        <img src="css/img/instagram.png" height="60px" width="60px"></div>
+
 </footer>
 
 </body>

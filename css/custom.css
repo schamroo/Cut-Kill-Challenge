@@ -356,8 +356,7 @@ div.section2 {
 }
 
 .opacity {
-    /*opacity: 0.4;
-    background-color: #7E7B78;*/
+    background-image: url('img/fond_formulaire.png');
     border: 5px double #999999;
     border-radius: 4px;
     -webkit-border-radius:4px;
@@ -447,7 +446,7 @@ input {
     border: none;
     background-color: transparent;
     background-size: cover;
-    background-image: url("img/submit.png");
+    background-image: url("img/fond_ENVOYER.PNG");
     background-repeat: no-repeat;
     background-position: bottom;
     margin-left: 440px;

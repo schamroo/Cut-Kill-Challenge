@@ -31,10 +31,12 @@ body{
 
 /* Banner */
 .navTab {
-    background-color: grey;
+    background-color: #171616;
     height: 90px;
-    width: 100%;
+    width: 1920px;
     position: fixed;
+    opacity: 0.7;
+    fill-opacity: context-fill;
 }
 .navMenu {
     height: 90px;
@@ -87,6 +89,7 @@ body{
     overflow: hidden;
     display: inline-block;
     vertical-align: middle;
+    padding-right: 218px;
 }
 
 .navTab li {
@@ -221,6 +224,7 @@ div.section2 {
     color: #242C29;
     margin-top: 23px;
     margin-left: 40px;
+    margin-bottom: 52px;
     position: relative;
 }
 
@@ -240,7 +244,9 @@ div.section2 {
 .tableau ul.coif_li {
     padding-left: 0px;margin-top: 0px;margin-bottom: 0px;
     padding-top: 38px;
+    padding-right: 32px;
 }
+
 .tableau ul.raz_li {
     margin-top: 0px;margin-bottom: 0px;padding-left: 0px;
     padding-top: 38px;
@@ -248,6 +254,11 @@ div.section2 {
 .tableau ul.epil_li {
     padding-left: 0px;margin-top: 0px;margin-bottom: 0px;
     padding-top: 38px;
+}
+.tableau ul.coif_li li span, .tableau ul.raz_li li span, .tableau ul.epil_li li span  {
+    font-family: Arimo-Bold;
+    font-size: 18px;
+    color: #242C29;
 }
 
 .tableau {
@@ -262,7 +273,7 @@ div.section2 {
     padding-bottom: 33px;
     padding-top: 33px;
     margin-left: 196px;
-    margin-top: 52px;
+    margin-top: 0px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas:'c r'
@@ -270,14 +281,14 @@ div.section2 {
 }
 
 .tableau .coiffure {
-    grid-area: c; min-width:auto;text-align: justify;
+    grid-area: c; min-width:auto;
 }
 
 .tableau .rasage {
-    grid-area: r; min-width: auto;text-align: justify;
+    grid-area: r; min-width: auto;
 }
 .tableau .epilation {
-    grid-area: e; min-width: auto;text-align: justify;
+    grid-area: e; min-width: auto;
 }
 
 .tableau h4#coif {
@@ -303,7 +314,7 @@ div.section2 {
     width: 1920px;
     height: 1299px;
     padding-top: 5PX;
-    padding-bottom: 1px;
+    padding-bottom: 100px;
     color: #ffffff;
 }
 
@@ -315,17 +326,25 @@ div.section2 {
     font-family: AgencyFBRegular;
     font-size: 60px;
     color: #ffffff;
+    display: inline-block;
+    border-bottom: 10px double #ffffff;
+    border-top:10px double #ffffff;
+    margin-bottom: 0;
+    margin-top: 100px;
 }
 .titre p#rdv_desc{
     font-family: Arimo-Regular;
-    font-size: 36px;
+    font-size: 32px;
     color: #ffffff;
     text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 74px;
+    padding-top: 50px;
 }
 
 .titre p#rdv_desc span {
     font-family: Arimo-Regular;
-    font-size: 100px;
+    font-size: 90px;
     color: #ffffff;
 }
 
@@ -337,8 +356,8 @@ div.section2 {
 }
 
 .opacity {
-    opacity: 0.4;
-    background-color: #7E7B78;
+    /*opacity: 0.4;
+    background-color: #7E7B78;*/
     border: 5px double #999999;
     border-radius: 4px;
     -webkit-border-radius:4px;
@@ -367,7 +386,7 @@ div.section2 {
     grid-area: f;width: 707px;height: 181px;padding-top: 50px;
     min-width: auto;
 }.opacity #item-6{
-    grid-area: g;width: 498px;height: 39px;text-align: center;  padding-left: 40px;
+    grid-area: g;width: 498px;height: 39px;text-align: center;  padding-left: 60px;
          font-family: Arimo-Regular;
          font-size: 18px;
          color: #ffffff;
@@ -390,30 +409,84 @@ div.section2 {
 textarea {
     height: 300px;
     width: 600px;
+    margin-bottom: 28px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border: 2px dotted white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 19px;
+    font-family: AgencyFBRegular;
+    font-size: 24px;
+    color: #A5A5A5;
+    opacity: 0.8;
+    background-color: #333333;
 }
-
 input {
     margin-bottom: 40px;
     padding-top: 14px;
     padding-bottom: 14px;
+    padding-left: 19px;
     border-radius: 8px;
     border: 2px dotted white;
     width: 300px;
+    font-family: AgencyFBRegular;
+    font-size: 24px;
+    color: #A5A5A5;
+    opacity: 0.8;
+    background-color: #333333
 }
+
+#item-7 {
+    width: 187px;
+    height: 49px;
+    font-family: AgencyFBRegular;
+    font-size: 24px;
+    color: #242C29;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+    background-image: url("img/submit.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-left: 440px;
+}
+
+/*
+input[type='submit']{
+    outline: none;
+               } */
+
 /* ===============================  footer ======================================  */
 footer {
     display: flex;
     justify-content: center;
+    background-color: #242c29;
+    height: 100px;
+    width:1920px;
+    border-top: 5px solid black;
 }
 footer p{
-    text-align: center;margin-left: auto;
+    text-align: center;
+    margin-left: auto;
+    padding-top:28px;
+    padding-bottom: 28px;
+    font-family: Arimo-Regular;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 0px;
 }
-
+footer p span {
+    font-family: Arimo-Regular;
+    font-size: 14px;
+    color: #ffffff;
+}
 footer img {
     padding-left: 25px;
 }
 
 .sc{
     text-align: right;margin-left: auto;padding-right: 40px;
-    padding-top: 20px;padding-bottom: 28px;
+    padding-top: 20px;padding-bottom: 20px;
 }

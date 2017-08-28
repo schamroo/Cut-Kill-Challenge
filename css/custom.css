@@ -28,6 +28,84 @@ body{
 }
 
 /* ===============================  SECTION 1 ======================================  */
+
+/* Banner */
+.navTab {
+    background-color: grey;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+}
+.navMenu {
+    height: 90px;
+    width: auto;
+    display: inline-block;
+    white-space: nowrap;
+    position: fixed;
+    right: 0px;
+}
+
+.navTab-logo {
+    height: 90px;
+    width: auto;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.navTab img {
+    vertical-align: middle;
+    max-height: 81px;
+    max-width: 78px;
+    padding-left: 220px;
+    padding-right: 60px;
+}
+
+.navTab-contact {
+    height: 37px;
+    width: 227px;
+    display: inline-block;
+    margin: 0px;
+}
+
+.contact-detail {
+    text-align: left;
+    color: white;
+    font-family: Arimo-Regular;
+    font-size: 18px;
+}
+.navTab ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navTab li {
+    float: left;
+    padding-right: 62px;
+    font-family: Agency FB;
+    font-size: 30px;
+}
+.navTab li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.navTab li a:hover {
+    background-color: #111;
+}
+
+/* Rest of the section */
 .section1 {
     width: 1920px;
     padding-bottom: 218px;
@@ -35,18 +113,18 @@ body{
     background-size: cover;
 }
 
-.section1 ul {
+/*.section1 ul {
     list-style-type: none;
 
 }
-/*header {
+header {
     background-color: #555555;
     padding-right: 218px;
-}*/
+}
 .section1 ul li {
     display: inline-block;
 }
-/*.menu>li>a{
+.menu>li>a{
     text-decoration: none;
     color: #ffffff;
     font-size: 30px;
@@ -57,29 +135,35 @@ body{
 .logo{
     text-align: right;
     margin-right: 340px;
+    padding-top: 275px;
 }
-table {
+
+.logo_desc {
+    width: 1920px;
+}
+
+.logo_desc table {
     border: 3px solid #ffffff;
     border-right: none;
     border-left:none;
 }
 
-table.logo_desc {
+.logo_desc table {
     font-family: Arimo-Regular;
     color: #ffffff;
     margin-left: auto;
     margin-top: 32px;
     margin-right: 274px;
 }
-table#logo_desc>tbody>tr:nth-child(1){
+#logo_desc table>tbody>tr:nth-child(1){
     font-size: 28px;
     padding-bottom: 15px;
 }
-table#logo_desc>tbody>tr:nth-child(2){
+#logo_desc table>tbody>tr:nth-child(2){
     font-size: 40px;
     padding-bottom: 24px;
 }
-table#logo_desc>tbody>tr:nth-child(3){
+#logo_desc table>tbody>tr:nth-child(3){
     font-size: 76px;
 }
 

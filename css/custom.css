@@ -357,6 +357,8 @@ div.section2 {
 
 .opacity {
     background-image: url('img/fond_formulaire.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 5px double #999999;
     border-radius: 4px;
     -webkit-border-radius:4px;
